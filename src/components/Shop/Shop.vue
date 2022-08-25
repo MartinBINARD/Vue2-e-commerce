@@ -1,12 +1,24 @@
 <template>
-  <ShopProductsList class="p-3"></ShopProductsList>
+  <ShopProductsList :products="products" class="p-3"></ShopProductsList>
 </template>
 
 <script>
   import ShopProductsList from "./ShopProductsList.vue";
+  import { eventBus } from "../../main";
 
   export default {
-    components: { ShopProductsList }
+    components: { ShopProductsList },
+    data() {
+      return {
+        products: []
+      }
+    },
+    created() {
+      this.products = eventBus.products;
+      eventBus.$on("update:products", (products) => {
+        this.products = products;
+      })
+    }
 }
 </script>
 

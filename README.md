@@ -2,7 +2,7 @@
 
 **_A simple e-commerce in VueJS 2_**
 
-**Main branch - Commit #2**
+**Main branch - Commit #3**
 
 # Description
 
@@ -10,7 +10,7 @@
 
 # Change done
 
-- Add item child components and folder architecture.
+- Add eventBus and hook created in Shop.vue.
 
 ## Project setup
 
