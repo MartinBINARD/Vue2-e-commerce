@@ -2,15 +2,15 @@
 
 **_A simple e-commerce in VueJS 2_**
 
-**Main branch - Commit #6**
+**Main branch - Commit #7**
 
 # Description
 
-- Add productToCart function in main.js and ShopProductItem.vue.
+- Add total in cart.
 
 # Change done
 
-- Add removeItemFromCart function in main .js and cartProductItem.vue.
+- Add total in cart.
 
 ## Project setup
 
