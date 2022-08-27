@@ -37,9 +37,12 @@ export const eventBus = new Vue({
     addProductToCart(product) {
       if(!this.cart.map( i => i.id).includes(product.id)) {
         this.cart = [ ...this.cart, product ];
-        this.$emit('update:cart', this.cart.slice());      
-      } 
-
+        this.$emit('update:cart', this.cart);      
+      }
+    },
+    removeItemFromCart(item) {
+      this.cart = this.cart.slice().filter(i => i.id !== item.id);
+      this.$emit('update:cart', this.cart);
     }
   }
 });

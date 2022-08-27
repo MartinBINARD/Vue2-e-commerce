@@ -24,7 +24,7 @@
     props: ["product"],
     methods: {
       addProductToCart() {
-        eventBus.addProductToCart({ ...this.product })
+        eventBus.addProductToCart({...this.product})
       }
     }
   }

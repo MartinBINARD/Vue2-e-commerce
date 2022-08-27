@@ -2,7 +2,7 @@
 
 **_A simple e-commerce in VueJS 2_**
 
-**Main branch - Commit #5**
+**Main branch - Commit #6**
 
 # Description
 
@@ -10,7 +10,7 @@
 
 # Change done
 
-- Add eventBus and hook created in Shop.vue.
+- Add removeItemFromCart function in main .js and cartProductItem.vue.
 
 ## Project setup
 
