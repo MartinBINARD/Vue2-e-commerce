@@ -2,11 +2,11 @@
 
 **_A simple e-commerce in VueJS 2_**
 
-**Main branch - Commit #3**
+**Main branch - Commit #5**
 
 # Description
 
-- A simple template in order to get familiar with state management pattern in VueJS 2.
+- Add productToCart function in main.js and ShopProductItem.vue.
 
 # Change done
 
