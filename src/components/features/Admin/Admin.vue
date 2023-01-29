@@ -1,9 +1,9 @@
 <template>
-  <admin-product-form></admin-product-form>
+  <admin-product-form class="w-50"></admin-product-form>
 </template>
 
 <script>
-import AdminProductForm from './AdminProductForm.vue';
+import AdminProductForm from './AdminProductForm';
 
 export default {
   components: {
