@@ -29,6 +29,11 @@ export default {
       page: eventBus.page
     }
   },
+  created() {
+    eventBus.$on('update:page', (page) => {
+      this.page = page;
+    })
+  },
   methods: {
     changePage(page) {
       this.page = page;
