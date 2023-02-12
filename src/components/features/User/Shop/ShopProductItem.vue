@@ -11,7 +11,7 @@
       <p>{{ product.description }}</p>
     </div>
     <div >
-      <span class="me-3">{{ product.price }}</span>
+      <span class="me-3">{{ product.price | price }}</span>
       <button @click="addProductToCart" class="btn btn-primary btn-sm float-right">Commander</button>
     </div>
   </div>
