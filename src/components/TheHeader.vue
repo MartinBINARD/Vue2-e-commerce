@@ -1,5 +1,6 @@
 <template>
-  <nav class="navbar navbar-light bg-light navbar-expand-lg">
+  <transition appear>
+    <nav class="navbar navbar-light bg-light navbar-expand-lg">
     <a class="navbar-brand" href="#">
       <img src="../assets/logo.png" width="30" height="30" />
       Dyma
@@ -18,6 +19,7 @@
       </ul>
     </div>
   </nav>
+  </transition>
 </template>
 
 <script>
@@ -62,7 +64,16 @@ export default {
 </script>
 
 <style scoped>
-a {
-  cursor: pointer;
-}
+ a {
+   cursor: pointer;
+ }
+ @keyframes fromtop {
+   from {
+     transform: translateY(-20px);
+   }
+   to {}
+ }
+ .v-enter-active {
+   animation: fromtop 1s;
+ }
 </style>
